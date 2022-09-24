@@ -1,4 +1,18 @@
-<center><a href="https://github.com"><i class="fa-brands fa-github"></i>   Github</a> | <a href="https://gitee.com"><i class="fa-brands fa-gitlab"></i>    Gitee</a></center >
+<center><a href="https://cloudb.pub"><i class="fa-sharp fa-solid fa-pen-to-square"></i>   我的主页</a>    |    <a href="https://github.com/xyz349925756"><i class="fa-brands fa-github"></i>   Github</a>   |    <a href="https://gitee.com/xyz349925756"><i class="fa-brands fa-gitlab"></i>    Gitee</a>    |   <a href="https://xyz349925756.gitee.io/"><i class="fa-brands fa-internet-explorer"></i>   国内镜像网站</a></center > 
+
+<hr>
+<nav>
+    <div id='themeChange' style="cursor: pointer;">Vue Theme</div>
+    <p><i class="fa-solid fa-jet-fighter-up"></i>    点上面换Theme</p>
+    <p><i class="fa-brands fa-themeco"></i>  Them Color : 
+    <font style="color: green">Vue</font>
+    <font style="color: dark">Dark</font>
+    <font style="color: blue">Buble</font>
+    <font style="color: purple">Pure</font>
+    <font style="color: #00ffff">Dolphin</font>
+    </p>
+</nav>
+<hr>
 
 
 
