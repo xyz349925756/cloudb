@@ -1,4 +1,4 @@
-![](assets/linux-1663861649815-2.png)
+![](_coverpage.assets/linux.png)
 
 # :cn:     [Cloudb <small>.pub</small>](/)
 

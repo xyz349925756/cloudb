@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="/font-awesome/css/all.css">
   <link rel="shortcut icon" href="_media/favicon.ico" >
   <link rel="stylesheet" id="theme" href="_css/vue.css">
-
+  <link rel="stylesheet" href="_css/sidebar.min.css" />
 
    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"> -->
 </head>
@@ -17,14 +17,17 @@
   <div id="app">正在加载...</div>
   <script>
     window.$docsify = {
-      name: '',
+      name: 'My Note',
       repo: 'xyz349925756/kubernetes', //github 仓库
 	  //maxLevel: 6,
 	  el:'#app',  // 加载提示
+	  routerMode: 'history', 
 	  loadSidebar: true,  //侧边栏
 	  subMaxLevel: 6,  //目录深度
+	  <!-- sidebarDisplayLevel: 6, -->
 	  loadNavbar:true, //导航
 	  logo: '_media/microsoft.svg', // logo图片
+	  onlyCover: false,
 	  coverpage: true, //开启封面
 	  autoHeader:true,  //根据 _sidebar.md的内容自动为每个页面增加标题
 	  externalLinkTarget: '_blank',   //外链新窗口打开

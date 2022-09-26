@@ -1,0 +1,14 @@
+linux 运维
+
+---
+
+  - [<i class="fa-solid fa-wand-magic-sparkles"></i>  linux运维01个性化设置](linux运维/linux运维01个性化设置)
+  - [<i class="fa-solid fa-pen-nib"></i>  linux运维02命令集](linux运维/linux运维02命令集)
+  - [<i class="fa-solid fa-pen"></i>  linux运维03正则、用户管理](linux运维/linux运维03正则、用户管理)
+  - [<i class="fa-sharp fa-solid fa-pen"></i>  linux运维04计划任务](linux运维/linux运维04计划任务)
+  - [<i class="fa-solid fa-pen-to-square"></i>  linux运维05Rsync](linux运维/linux运维05Rsync)
+  - [<i class="fa-solid fa-pen-fancy"></i>  linux运维06ssh-ansible](linux运维/linux运维06ssh-ansible)
+  - [<i class="fa-solid fa-pencil"></i>  linux运维07web服务](linux运维/linux运维07web服务)
+  - [<i class="fa-solid fa-pen-ruler"></i>  linux运维08负载均衡](linux运维/linux运维08负载均衡)
+  - [<i class="fa-solid fa-pen-clip"></i>  linux运维09zabbix监控服务](linux运维/linux运维09zabbix监控服务)
+  - [<i class="fa-solid fa-paintbrush"></i>  linux运维10shell](linux运维/linux运维10shell)

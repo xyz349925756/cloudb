@@ -323,25 +323,25 @@ tcp6       0      0 ::1:25                  :::*                    LISTEN      
 
 https://172.16.0.31:2224/login
 
-![image-20210908232938235](corosync pacemaker.assets\image-20210908232938235.png)
+![image-20210908232938235](corosync_pacemaker.assets\image-20210908232938235.png)
 
-![image-20210908233013112](corosync pacemaker.assets\image-20210908233013112.png)
+![image-20210908233013112](corosync_pacemaker.assets\image-20210908233013112.png)
 
 ### 创建集群
 
-![image-20210910164408304](corosync pacemaker.assets\image-20210910164408304.png)
+![image-20210910164408304](corosync_pacemaker.assets\image-20210910164408304.png)
 
 这步操作完成会生成corosync.conf配置文件，这份文件需要保存好
 
-![image-20210908233401798](corosync pacemaker.assets\image-20210908233401798.png)
+![image-20210908233401798](corosync_pacemaker.assets\image-20210908233401798.png)
 
 这里使用相同密码
 
-![image-20210908233456841](corosync pacemaker.assets\image-20210908233456841.png)
+![image-20210908233456841](corosync_pacemaker.assets\image-20210908233456841.png)
 
 
 
-![image-20210908233525540](corosync pacemaker.assets\image-20210908233525540.png)
+![image-20210908233525540](corosync_pacemaker.assets\image-20210908233525540.png)
 
 ### 配置文件corosync
 
@@ -389,7 +389,7 @@ logging {
 
 ```
 
-![image-20210908233820367](corosync pacemaker.assets\image-20210908233820367.png)
+![image-20210908233820367](corosync_pacemaker.assets\image-20210908233820367.png)
 
 按图操作
 
@@ -466,7 +466,7 @@ Errors found during check: config not valid
 
 GUI关闭
 
-![image-20210909120216165](corosync pacemaker.assets\image-20210909120216165.png)
+![image-20210909120216165](corosync_pacemaker.assets\image-20210909120216165.png)
 
 ```BASH
 [root@ceph01 ~]# crm_verify -L -V
@@ -479,7 +479,7 @@ GUI关闭
 
 添加resource(VIP)
 
-![image-20210909144618617](corosync pacemaker.assets\image-20210909144618617.png)
+![image-20210909144618617](corosync_pacemaker.assets\image-20210909144618617.png)
 
 VIP就是keepalived里面的VIP。
 
@@ -497,11 +497,11 @@ LVM这个适应ISCSI 不适合生产环境不使用
 
 
 
-![image-20210910165643798](corosync pacemaker.assets\image-20210910165643798.png)
+![image-20210910165643798](corosync_pacemaker.assets\image-20210910165643798.png)
 
 
 
-![image-20210910165817306](corosync pacemaker.assets\image-20210910165817306.png)
+![image-20210910165817306](corosync_pacemaker.assets\image-20210910165817306.png)
 
 这里报警了。删了，因为ceph02 ceph03节点没有挂载rbd1
 
@@ -526,11 +526,11 @@ Filesystem      Size  Used Avail Use% Mounted on
 
 ```
 
-![image-20210910204305547](corosync pacemaker.assets\image-20210910204305547.png)
+![image-20210910204305547](corosync_pacemaker.assets\image-20210910204305547.png)
 
 ## 创建service group
 
-![image-20210910212157531](corosync pacemaker.assets\image-20210910212157531.png)
+![image-20210910212157531](corosync_pacemaker.assets\image-20210910212157531.png)
 
 ```bash
 [root@ceph01 ~]# pcs resource group  add testvip VIP_rbd
@@ -581,7 +581,7 @@ Daemon Status:
 # 失效30秒后切换资源
 ```
 
-![image-20210910215335632](corosync pacemaker.assets\image-20210910215335632.png)
+![image-20210910215335632](corosync_pacemaker.assets\image-20210910215335632.png)
 
 设置failure-timeout失效多少秒后切回资源到失效的主机
 
@@ -595,7 +595,7 @@ Daemon Status:
 [root@ceph01 ~]# pcs resource meta rbd1 failure-timeout=30
 ```
 
-![image-20210910220047762](corosync pacemaker.assets\image-20210910220047762.png)
+![image-20210910220047762](corosync_pacemaker.assets\image-20210910220047762.png)
 
 设置切换时间
 
@@ -622,7 +622,7 @@ resource-stickiness表示资源对主机的黏贴性。
 [root@ceph01 ~]# pcs constraint location testvip prefers ceph01=200
 ```
 
-![image-20210910224821431](corosync pacemaker.assets\image-20210910224821431.png)
+![image-20210910224821431](corosync_pacemaker.assets\image-20210910224821431.png)
 
 查看资源的优先级
 
@@ -725,7 +725,7 @@ Quorum:
 [root@ceph01 ~]# ip link set eth1 up
 ```
 
-![image-20210910231153357](corosync pacemaker.assets\image-20210910231153357.png)
+![image-20210910231153357](corosync_pacemaker.assets\image-20210910231153357.png)
 
 ```BASH
 [root@ceph02 ~]# pcs status
@@ -772,7 +772,7 @@ fence是集群中某个节点故障使其关机，重启及卸载集群
 [root@ceph01 ~]# pcs property set stonith-enabled=true
 ```
 
-![image-20210910233729074](corosync pacemaker.assets\image-20210910233729074.png)
+![image-20210910233729074](corosync_pacemaker.assets\image-20210910233729074.png)
 
 2.查看本系统支持的fence
 
@@ -948,7 +948,7 @@ stonith_admin --reboot ceph02
 
 web 设置
 
-![image-20210911000740246](corosync pacemaker.assets\image-20210911000740246.png)
+![image-20210911000740246](corosync_pacemaker.assets\image-20210911000740246.png)
 
 ### 备份恢复集群
 

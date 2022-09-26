@@ -1,0 +1,18 @@
+<h3 style="text-align: center">开发语言及实例</h3>
+
+---
+
+> 这里记录着Python,Shell等一些开发语言的笔记和案例,为生产提供便捷.一些常用的windows变量和winrar打包成exe.
+
+
+- [<i class="fa-brands fa-python"></i>  Python](dev/python)
+- [<i class="fa-solid fa-file"></i>  Python Django](dev/python_Django)
+- [<i class="fa-solid fa-file-lines"></i>  Python mysql](dev/python_mysql)
+- [<i class="fa-solid fa-file-import"></i>  Python oop](dev/python_oop)
+- [<i class="fa-solid fa-file-powerpoint"></i>  python 案例](dev/python_案例)
+- [<i class="fa-solid fa-file-pen"></i>  python项目开发](dev/python项目开发)
+- [<i class="fa-solid fa-file-export"></i>  windows变量](dev/windows变量)
+- [<i class="fa-solid fa-file-shield"></i>  winrar](dev/winrar)
+- [<i class="fa-brands fa-centos"></i>  shell](dev/Shell)
+- [<i class="fa-solid fa-paintbrush"></i>  linux运维10shell](linux运维/linux运维10shell)
+- [<i class="fa-brands fa-redhat"></i>   linux-shell常用脚本](dev/linux-shell常用脚本)
