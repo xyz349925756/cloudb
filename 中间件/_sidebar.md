@@ -6,7 +6,7 @@
     - [<i class="fa-solid fa-circle-user"></i>  简历](home/个人简历202208 "简历")
 	- [<i class="fa-solid fa-user-lock"></i>  职责](home/方法与职责 "职责")
 	- [<i class="fa-solid fa-user-check"></i>  申请简历](home/申请贵公司职位简历 "申请贵公司职位简历")
-  - [<i class="fa-brands fa-connectdevelop"></i>  Dev](dev/README "开发")
+  - [<i class="fa-brands fa-connectdevelop"></i>  Dev](dev/readme "开发")
     - [<i class="fa-brands fa-python"></i>  Python](dev/python "python基础")
     - [<i class="fa-solid fa-file"></i>  Python Django](dev/python_Django "Django")
     - [<i class="fa-solid fa-file-lines"></i>  Python mysql](dev/python_mysql "python Mysql")
