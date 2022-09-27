@@ -132,10 +132,6 @@ Use the `printf()` function.
 
 
 
-<video src="xxx.mp4" />
-
-<iframe height='265' scrolling='no' title='Fancy Animated SVG Menu' src='http://codepen.io/jeangontijo/embed/OxVywj/?height=265&theme-id=0&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'></iframe>
-
 
 
 
