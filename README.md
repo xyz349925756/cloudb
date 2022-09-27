@@ -1,4 +1,4 @@
-<center><a href="https://cloudb.pub"><i class="fa-sharp fa-solid fa-pen-to-square"></i>   我的主页</a>    |    <a href="https://github.com/xyz349925756"><i class="fa-brands fa-github"></i>   Github</a>   |    <a href="https://gitee.com/xyz349925756"><i class="fa-brands fa-gitlab"></i>    Gitee</a>    |   <a href="https://xyz349925756.gitee.io/"><i class="fa-brands fa-internet-explorer"></i>   国内镜像网站</a></center > 
+<center><a target="_blank" href="https://cloudb.pub"><i class="fa-sharp fa-solid fa-pen-to-square"></i>   我的主页</a>    |    <a target="_blank" href="https://github.com/xyz349925756"><i class="fa-brands fa-github"></i>   Github</a>   |    <a href="https://gitee.com/xyz349925756" target="_blank"><i class="fa-brands fa-gitlab"></i>    Gitee</a>    |   <a target="_blank" href="https://xyz349925756.gitee.io/"><i class="fa-brands fa-internet-explorer"></i>   国内镜像网站</a></center > 
 
 <hr>
 <nav>
