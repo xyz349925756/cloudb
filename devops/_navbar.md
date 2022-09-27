@@ -2,7 +2,7 @@
 
 ---
 - [<i class="fa-sharp fa-solid fa-house-chimney-window"></i>  Home](/)
-- [<i class="fa-brands fa-connectdevelop"></i>  Dev](dev/README)
+- [<i class="fa-brands fa-connectdevelop"></i>  Dev](dev/readme)
 - [<i class="fa-brands fa-square-github"></i>  运维开发](devops/readme)
 - [<i class="fa-brands fa-linux"></i>  linux运维](linux运维/readme)
 - [<i class="fa-solid fa-layer-group"></i>  存储与数据库](存储与数据库/readme)
