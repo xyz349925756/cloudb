@@ -2,8 +2,7 @@
 
 <hr>
 <nav>
-    <div id='themeChange' style="cursor: pointer;">Vue Theme</div>
-    <p><i class="fa-solid fa-jet-fighter-up"></i>    点上面换Theme</p>
+    <div id='themeChange' style="cursor: pointer;"><p><i class="fa-solid fa-jet-fighter-up"></i>更换Theme</p></div>
     <p><i class="fa-brands fa-themeco"></i>  Them Color : 
     <font style="color: green">Vue</font>
     <font style="color: dark">Dark</font>
@@ -13,6 +12,7 @@
     </p>
 </nav>
 <hr>
+
 
 
 > 请注意:https://cloudb.pub 是效果最好的.gitee的站点很差劲,html代码竟然违规!!!,后期不考虑调整,因为是使用Github Page 如果不能正常访问该站,那就是你被墙了!
