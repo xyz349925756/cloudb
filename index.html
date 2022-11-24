@@ -2,67 +2,78 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>我的网站</title>
+    <title>Cloudb.pub</title>
 
     <link rel="stylesheet" href="_css/static/css/bootstrap.css">
     <link rel="stylesheet" href="_css/static/css/font-awesome/css/all.css">
-    <link rel="stylesheet" href="_css/static/css/sweetalert.css">
+
     <script src="_css/static/js/bootstrap.js"></script>
     <script src="_css/static/js/jquery-3.6.0.min.js"></script>
-    <script src="_css/static/js/sweetalert.js"></script>
 
+    <style>
+        .translate-middle1 {
+            transform: translate(-50%, -20%);
+        }
+    </style>
 
 </head>
 <body>
 
-
 <div class="container">
-    <div class="row align-items-center">
+    <div class="row">
         <div class="col-md-2"></div>
-        <div class="col-md-8 position-absolute top-50 start-50 translate-middle">
+<!--        <div class="col-md-8 position-absolute top-50 start-50 translate-middle">-->
+        <div class="col-md-8 position-absolute top-50 start-50 translate-middle1">  <!--style="margin-top: 20%"-->
             <!--导航-->
 
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <ul class="nav nav-tabs" id="myTab" role="tablist" style="z-index: 100">
                 <li class="nav-item" role="presentation">
                     <button class="nav-link text-primary active" id="baidu-tab" data-bs-toggle="tab"
                             data-bs-target="#baidu"
-                            type="button" role="tab" aria-controls="baidu" aria-selected="true">百度
+                            type="button" role="tab" aria-controls="baidu" aria-selected="true">
+                        <i class="fa-solid fa-b"></i>  百度
                     </button>
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link text-success" id="bing-tab" data-bs-toggle="tab" data-bs-target="#bing"
-                            type="button" role="tab" aria-controls="bing" aria-selected="false">Bing
+                            type="button" role="tab" aria-controls="bing" aria-selected="false">
+                        <i class="fa-brands fa-microsoft"></i>  Bing
                     </button>
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link text-warning" id="sogou-tab" data-bs-toggle="tab" data-bs-target="#sogou"
-                            type="button" role="tab" aria-controls="sogou" aria-selected="false">Sogou
+                            type="button" role="tab" aria-controls="sogou" aria-selected="false">
+                        <i class="fa-solid fa-s"></i>  Sogou
                     </button>
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link text-info" id="f-tab" data-bs-toggle="tab" data-bs-target="#f"
-                            type="button" role="tab" aria-controls="f" aria-selected="false">F
+                            type="button" role="tab" aria-controls="f" aria-selected="false">
+                        <i class="fa-solid fa-f"></i>  F
                     </button>
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link text-danger" id="goobe-tab" data-bs-toggle="tab" data-bs-target="#goobe"
-                            type="button" role="tab" aria-controls="goobe" aria-selected="false">Goobe
+                            type="button" role="tab" aria-controls="goobe" aria-selected="false">
+                        <i class="fa-solid fa-g"></i>  Goobe
                     </button>
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link text-secondary" id="yandex-tab" data-bs-toggle="tab"
                             data-bs-target="#yandex"
-                            type="button" role="tab" aria-controls="yandex" aria-selected="false">Yandex
+                            type="button" role="tab" aria-controls="yandex" aria-selected="false">
+                        <i class="fa-brands fa-yandex-international"></i>  Yandex
                     </button>
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link text-dark" id="google-tab" data-bs-toggle="tab" data-bs-target="#google"
-                            type="button" role="tab" aria-controls="google" aria-selected="false">Google
+                            type="button" role="tab" aria-controls="google" aria-selected="false">
+                        <i class="fa-brands fa-google-plus-g"></i>  Google
                     </button>
                 </li>
             </ul>
 
-            <div class="tab-content" id="myTabContent">
+            <div class="tab-content " id="myTabContent">
                 <div class="tab-pane fade show active" id="baidu" role="tabpanel" aria-labelledby="baidu-tab">
                     <img src="/_media/baidu.png" alt="Baidu"
                          style="position: static;margin-top: -50%;margin-left: 20%;z-index: -99;">
@@ -72,7 +83,7 @@
                         <input class="form-control mb-3" type=text name=wd size=60 placeholder="Welcome Come To Cloudb.pub">
                         <div class="d-grid gap-2 d-md-flex justify-content-md-center">
                             <button class="btn btn-primary">
-                                百度搜索
+                                <i class="fa-solid fa-b fa-spin"></i>  百度搜索
                             </button>
                             <a href="index1.html" class="btn btn-outline-primary">
                                 知识库
@@ -89,7 +100,7 @@
                         <input class="form-control mb-3" type=text name=q size=60 placeholder="Welcome Come To Cloudb.pub">
                         <div class="d-grid gap-2 d-md-flex justify-content-md-center">
                             <button class="btn btn-success">
-                                Bing
+                                <i class="fa-brands fa-microsoft fa-spin"></i>  Bing
                             </button>
                             <a href="index1.html" class="btn btn-outline-success">
                                 知识库
@@ -106,7 +117,7 @@
                         <input class="form-control mb-3" type=text name=query size=60 placeholder="Welcome Come To Cloudb.pub">
                         <div class="d-grid gap-2 d-md-flex justify-content-md-center">
                             <button class="btn btn-warning">
-                                Sogou
+                               <i class="fa-solid fa-s fa-spin"></i>  Sogou
                             </button>
                             <a href="index1.html" class="btn btn-outline-warning">
                                 知识库
@@ -123,7 +134,7 @@
                         <input class="form-control mb-3" type=text name=q size=60 placeholder="Welcome Come To Cloudb.pub">
                         <div class="d-grid gap-2 d-md-flex justify-content-md-center">
                             <button class="btn btn-info">
-                                F
+                              <i class="fa-solid fa-f fa-spin"></i>  F
                             </button>
                             <a href="index1.html" class="btn btn-outline-info">
                                 知识库
@@ -140,7 +151,7 @@
                         <input class="form-control mb-3" type=text name=k size=60 placeholder="程序员最好的搜索引擎!">
                         <div class="d-grid gap-2 d-md-flex justify-content-md-center">
                             <button class="btn btn-danger">
-                                Goobe
+                                <i class="fa-solid fa-g fa-spin"></i>  Goobe
                             </button>
                             <a href="index1.html" class="btn btn-outline-danger">
                                 知识库
@@ -157,7 +168,7 @@
                         <input class="form-control mb-3" type=text name=text size=60 placeholder="Welcome Come To Cloudb.pub">
                         <div class="d-grid gap-2 d-md-flex justify-content-md-center">
                             <button class="btn btn-secondary">
-                                Yandex
+                               <i class="fa-brands fa-yandex-international fa-spin"></i>   Yandex
                             </button>
                             <a href="index1.html" class="btn btn-outline-secondary">
                                 知识库
@@ -174,7 +185,7 @@
                         <input class="form-control mb-3" type=text name=q size=60 placeholder="Google 必须翻墙才能访问!">
                         <div class="d-grid gap-2 d-md-flex justify-content-md-center">
                             <button class="btn btn-dark">
-                                Google
+                                <i class="fa-brands fa-google-plus-g fa-spin"></i>  Google
                             </button>
                             <a href="index1.html" class="btn btn-outline-dark">
                                 知识库
@@ -187,13 +198,23 @@
             </div>
 
 
+
+
+
+<!--        <div class="alert alert-primary text-danger m-2" role="alert">-->
+<!--            <i class="fa-solid fa-circle-exclamation"></i>  该搜索框直接向百度搜索发送请求,本站无任何信息收集,如果出现信息收集请联系作者:-->
+<!--            <span>-->
+<!--                <a href="mailto:xyz349925756@hotmail.com">xyz349925756@hotmail.com</a>-->
+<!--            </span>-->
+<!--        </div>-->
         </div>
 
-
+    </div>
         <div class="col-md-2"></div>
 
-    </div>
 
+
+    </div>
 </div>
 
 </body>
