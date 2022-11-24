@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cloudb</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="/font-awesome/css/all.css">
+  <link rel="shortcut icon" href="_media/favicon.ico" >
+  <link rel="stylesheet" id="theme" href="_css/vue.css">
+  <link rel="stylesheet" href="_css/sidebar.min.css" />
+
+   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"> -->
+</head>
+<body>
+  <div id="app">网站资源很大加载需要时间...</div>
+  <script>
+    window.$docsify = {
+      name: 'My Note',
+      repo: 'xyz349925756/kubernetes', //github 仓库
+	  //maxLevel: 6,
+	  el:'#app',  // 加载提示
+	  count:{
+        countable: true,
+	    position: 'top',
+	    margin: '10px',
+	    float: 'right',
+	    fontsize:'0.9em',
+	    color:'rgb(90,90,90)',
+	    language:'chinese',
+	    localization: {
+	  	  words: "",
+	  	  minute: ""
+	    },
+	    isExpected: true
+	    
+       },
+	  //routerMode: 'history', 
+	  loadSidebar: true,  //侧边栏
+	  subMaxLevel: 6,  //目录深度
+	  <!-- sidebarDisplayLevel: 6, -->
+	  loadNavbar:true, //导航
+	  //logo: '_media/microsoft.svg', // logo图片
+	  logo: '_media/redhatapplication_linux_sombrerorojo__3781.png',
+	  onlyCover: false,
+	  coverpage: true, //开启封面
+	  autoHeader:true,  //根据 _sidebar.md的内容自动为每个页面增加标题
+	  externalLinkTarget: '_blank',   //外链新窗口打开
+	  externalLinkRel: '',
+	  <!-- relativePath: true, -->
+	 
+	  search: {
+		placeholder: '搜索   <按回车搜索>',
+		noData: '<i class="fa-solid fa-bug"></i>  Error: 您搜索的内容不存在',
+		depth: 2,
+	  },
+	  
+	  plugins: [
+	    function(hook) {
+		  var footer = [
+		  '<footer>',
+		    'Copyright &copy;By <a herf="cloudb.pub">Cloudb</a>',
+		     '<center>',
+			   '<p><span><i class="fa-brands fa-alipay"></i>支付宝</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-brands fa-weixin"></i><span>微信</span></p>',
+			   '<img src="_media/sz.png">',
+			   '<p><i class="fa-solid fa-thumbs-up"></i>  打赏</p>',
+             '</center>',
+		  '</footer>',
+		].join('');
+		
+		hook.afterEach(function(html){
+		   return html + footer;
+		});
+	   }
+	  ],
+    }
+  </script>
+  <!-- Docsify v4 -->
+  <!-- <script src="//cdn.jsdelivr.net/npm/docsify@4"></script> -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <!-- <script src="//unpkg.com/docsify/lib/plugins/search.js"></script> -->
+  <script src="//polyfill.io/v3/polyfill.min.js?features=String.prototype.normalize"></script>
+
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script> 
+  
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+  <!-- 图片缩放 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script> <!--分页-->
+<script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+<script src="//unpkg.com/docsify-count/dist/countable.js"></script>
+<script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-cshtml.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-css.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-shell-session.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-python.min.js"></script>
+
+<script src="_js/component.js"></script>
+<script src="_js/index.js"></script>
+<!-- <script src="_js/search.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/gh/Sumsung524/docsify-backTop/dist/docsify-backTop.min.js"></script> -->
+<script src="_js/docsify-backTop.min.js"></script>
+<script>
+    docsifyBackTop = {
+        size: 32,           	// 数值，组件大小，默认值32。
+        bottom: 30,         	// 数值，组件底部偏移距离，默认值15。
+        right: 30,          	// 数值，组件右侧偏移距离，默认值15。
+        logo: '<i class="fa-brands fa-autoprefixer fa-3x"></i>',				// logo:字符串或svg矢量图代码，默认为svg代码图标。
+        <!-- bgColor: '\#2096ff'    	// 背景颜色，#fff、pink等，logo为svg图标时，不填。 -->
+    };
+</script>
+
+<!-- 代码高亮 -->
+<!-- <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script> -->
+
+<!-- <script> -->
+  <!-- if (typeof navigator.serviceWorker !== 'undefined') { -->
+    <!-- navigator.serviceWorker.register('sw.js') -->
+  <!-- } -->
+<!-- </script> -->
+<script>
+window.onload = function() {
+            const themeChange = document.getElementById('themeChange');
+            const theme = document.getElementById('theme');
+
+            themeChange.addEventListener('click', () => {
+
+                switch (themeChange.innerHTML) {
+                    case 'Vue Theme':
+                        document.getElementById('themeChange').innerHTML = 'Dark Theme';
+                        document.getElementById('theme').href = "_css/dark.css";
+                        break;
+                    case 'Dark Theme':
+                        document.getElementById('themeChange').innerHTML = 'Buble Theme';
+                        document.getElementById('theme').href = "_css/buble.css";
+                        break;
+                    case 'Buble Theme':
+                        document.getElementById('themeChange').innerHTML = 'Pure Theme';
+                        document.getElementById('theme').href = "_css/pure.css";
+                        break;
+					case 'Pure Theme':
+                        document.getElementById('themeChange').innerHTML = 'Dolphin Theme';
+                        document.getElementById('theme').href = "_css/dolphin.css";
+                        break;						
+                    default:
+                        document.getElementById('themeChange').innerHTML = 'Vue Theme';
+                        document.getElementById('theme').href = "_css/vue.css";
+                }
+            })
+        }
+    </script>
+
+
+
+</body>
+
+
+</body>
+</html>
