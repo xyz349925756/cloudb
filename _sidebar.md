@@ -2,13 +2,17 @@
 
 ---
 
-  - [<i class="fa-sharp fa-solid fa-house-chimney-window"></i>  Home](/ "Home")
-    - [<i class="fa-solid fa-circle-user"></i>  简历](home/个人简历202208 "简历")
+  - [<i class="fa-sharp fa-solid fa-house-chimney-window"></i>  Home](/ "Cloudb")
+    - [<i class="fa-solid fa-circle-user"></i>  简历](home/个人简历1 "简历")
 	- [<i class="fa-solid fa-user-lock"></i>  职责](home/方法与职责 "职责")
-	- [<i class="fa-solid fa-user-check"></i>  申请简历](home/申请贵公司职位简历 "申请贵公司职位简历")
+	- [<i class="fa-solid fa-user-check"></i>  自定义主题](home/自定义主题 "自定义主题")
   - [<i class="fa-brands fa-connectdevelop"></i>  Dev](dev/readme "开发")
     - [<i class="fa-brands fa-python"></i>  Python](dev/python "python基础")
+    - [<i class="fa-brands fa-python"></i>  Python_崔庆才](dev/python_崔庆才 "python爬虫")
     - [<i class="fa-solid fa-file"></i>  Python Django](dev/python_Django "Django")
+    - [<i class="fa-solid fa-file"></i>  路飞学城project](dev/python_路飞学城 "路飞学城")
+    - [<i class="fa-solid fa-file"></i>  django4+vue3](dev/django4+vue3 "django+vue")
+    - [<i class="fa-solid fa-file"></i>  vue3](dev/vue3 "vue3")
     - [<i class="fa-solid fa-file-lines"></i>  Python mysql](dev/python_mysql "python Mysql")
     - [<i class="fa-solid fa-file-import"></i>  Python oop](dev/python_oop  "面向对象")
     - [<i class="fa-solid fa-file-powerpoint"></i>  python 案例](dev/python_案例 "python 项目")

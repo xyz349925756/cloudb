@@ -1,6 +1,6 @@
 ![](_coverpage.assets/linux.png)
 
-# :cn:     [Cloudb <small>.pub</small>](/)
+> :cn:    
 
 > Cloudb.pub是本人自己的文档类型的博客.
 >
