@@ -195,6 +195,56 @@ main.hidden {
   text-decoration: none;
   transition: all 0.3s;
 }
+
+/* h1 -h6样式 */
+
+h1 .anchor{
+	border-radius: 100%;
+	padding: 20px;
+	border-left: outset 10px blue;
+	border-right: inset 10px green;
+}
+
+h2 .anchor{
+	/* background: rgb(0, 0, 0); */
+	border-radius: 10px 40px;
+	padding: 1px 10px;
+	border-left: outset 10px #f44336;
+	border-right: inset 10px #000000;
+}
+
+h3 .anchor{
+	/* background: #9C27B0; */
+	border-radius: 40px 4px;
+	padding: 1px 15px 2px;
+	/* color: #ffffff; */
+	border-left: outset 10px #e96900;
+	border-right: inset 10px #505d6b;
+}
+h4 .anchor{
+	/* background: #2196F3; */
+	border-radius: 30px;
+	padding: 1px 15px 2px;
+	/* color: #ffffff; */
+	border-left: outset 10px #F44336;
+	border-right: inset 10px #607D8B;
+}
+h5 .anchor{
+	/* background: #009688; */
+	border-radius: 0px 0px 40px 40px;
+	padding: 1px 15px 2px;
+	/* color: #ffffff; */
+	border-left: outset 10px #3F51B5;
+	border-right: inset 10px #2196F3;
+}
+h6 .anchor{
+	background: #8BC34A;
+	border-radius: 0px 30px 30px 0px;
+	padding: 1px 15px 2px;
+	color: #ffffff;
+	border-left: outset 10px rgb(255, 216, 0);
+}
+
 .anchor span {
   color: #34495e;
 }
