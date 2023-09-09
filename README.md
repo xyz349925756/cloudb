@@ -11,24 +11,99 @@
     <font style="color: #00ffff">Dolphin</font>
     </p>
 </nav>
-<hr>
-为什么做这么一个搜索页面?因为这个页面是我的笔记,平时上网搜资料非要输入url很麻烦,所以把这几个常用的网站放这,后面直接搜索即可.Google就不放上来了,需要科学上网.后期根据搜索符合我需求调整先后顺序!百度有可能是第一个下架的搜索!
 
-
-
-> 请注意:https://cloudb.pub 是效果最好的.gitee的站点很差劲,html代码竟然违规!!!,后期不考虑调整,因为是使用Github Page 如果不能正常访问该站,那就是你被墙了!
-
-本站采用Docsify+Markdown格式,直接使用Typora编辑而成.
-
-搜索:<kbd>Ctrl</kbd>+<kbd>f</kbd>
-
-SDS 软件定义存储部分不会分享!
-
-本站分享的内容包含下面的大类.
 
 ---
 
-- [<i class="fa-solid fa-circle-user"></i>  简历](home/个人简历202208)
-- [<i class="fa-solid fa-user-lock"></i>  职责](home/方法与职责)
-- [<i class="fa-solid fa-user-check"></i>  申请简历](home/申请贵公司职位简历)
+关于这个网站：这个网站是使用GitHub Page 搭建的，上面出现 404 的页面是因为我取消了分享，因为这些技术在中国未来20年甚至更长时间是不会有大变动。就现在分享的这些学会的人在中国IT都是中上水准。
+
+<!DOCTYPE html><html>
+<head>
+<style>   
+    .box{
+        overflow: hidden;
+        border-radius: 5px;
+    }    
+.border-top {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to right,darkorange,darkcyan);
+  animation: animate-border-top 2s linear infinite;
+}
+@keyframes animate-border-top {
+  0% {
+      transform: translateX(-100%);
+  }
+  100% {
+      transform: translateX(100%);
+  }
+}
+.border-right{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(to bottom,darkorange,darkcyan);
+  animation: animate-border-right 2s linear infinite;
+  animation-delay: 1s;
+}
+@keyframes animate-border-right{
+  0% {
+      transform: translateY(-100%);
+  }
+  100% {
+      transform: translateY(100%);
+  }
+}
+.border-bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to left,darkorange,darkcyan);
+  animation: animate-border-bottom 2s linear infinite;
+}
+@keyframes animate-border-bottom {
+  0% {
+      transform: translateX(100%);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+.border-left{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(to top,darkorange,darkcyan);
+  animation: animate-border-left 2s linear infinite;
+  animation-delay: 1s;
+}
+@keyframes animate-border-left{
+  0% {
+      transform: translateY(100%);
+  }
+  100% {
+      transform: translateY(-100%);
+  }
+}
+</style>
+</head>
+<body>
+<div class="box">
+   <h1>Border Animation</h1>
+   <span class="border-top"></span>
+   <span class="border-right"></span>
+   <span class="border-bottom"></span>
+   <span class="border-left"></span>
+</div>
+</body>
+</html>
 
