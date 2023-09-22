@@ -1,0 +1,74 @@
+body {
+    background: linear-gradient(to right, #ffffff, #fff3cd);
+    overflow-x: hidden;
+}
+
+.card{
+    --bs-card-bg: transparent;
+}
+
+.color-button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.form-control {
+    background-color: transparent;
+}
+
+#hr_1 {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    /* background-color: var(--horizontal-divider-color); */
+    background-image: linear-gradient(to left, #42a5f5, white);
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+    animation: hr_1-move 2s linear infinite;
+    opacity: 1;
+}
+
+@keyframes hr_1-move {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.content h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 9em;
+    font-family: fantasy;
+}
+
+.content h2:nth-child(1) {
+    color: transparent;
+    -webkit-text-stroke: 2px #03a9f4;
+}
+
+.content h2:nth-child(2) {
+    color: #03a9f4;
+    animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+    0%, 100% {
+        clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+    }
+    50% {
+        clip-path: polygon(0% 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 36%, 100% 32%, 100% 100%, 0% 100%);
+    }
+}
