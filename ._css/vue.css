@@ -198,46 +198,38 @@ main.hidden {
 
 /* h1 -h6样式 */
 h1 {
-    font-size: 2rem;
-    text-align: center;
-    padding: 25px 0px;
-    margin: 0px;
+  font-size: 2rem;
+  text-align: center;
+  padding: 25px 0px;
+  margin: 0px;
 }
 h1 .anchor{
-    border-radius: 5px;
-    padding: 3px 50px;
-    /* border-left: 100px solid darkorange; */
-    /* border-top: 1px solid darkorange; */
-    border-right: 1px solid #56ab2f;
-    border-bottom: 1px solid #56ab2f;
-    background: #8BC34A;
-    /* color: white; */
-    background-image: url(https://cdn.icon-icons.com/icons2/1527/PNG/512/doc_106706.png);
-    background-size: 35px;
-    background-repeat: no-repeat; 
-    /* background-attachment: fixed; */
-    background-position: right; 
-    box-shadow: 10px 10px 10px 5px #333333;
+  border-radius: 50px 10px;
+  border-left: #ff5555 20px solid;
+  border-right: #368eff 20px solid;
+  padding: 0px 30px;
+  box-shadow: 4px 4px 2px #ff5555;
+  /* color: white; */
 }
 h1 a.anchor:hover {
-    box-shadow: 0 0 20px 10px #56ab2f;
+  box-shadow: 0 0 20px 10px #ff5555;
 }
 h2 {
-	border-bottom: solid 1px #cb3066;
+  border-bottom: solid 1px #03A9F4;
 }
 h2 .anchor{
-    background-image: linear-gradient(to right, #16bffd, #cb3066);
-    border-radius: 0px 5px 0px 0px;
-    padding: 2px 30px 2px;
-    color: white;
-    border-top: solid 1px white;
-    box-shadow: 4px 4px 2px #16bffd;
+  background-image: linear-gradient(to right, #3F51B5, #03A9F4);
+  border-radius: 0px 5px 0px 0px;
+  padding: 2px 30px 2px;
+  color: white;
+  border-top: solid 1px white;
+  box-shadow: 4px 4px 2px #3F51B5;
 }
 h2 a.anchor:hover {
-    box-shadow: 0 0 20px 10px #16bffd;
+  box-shadow: 0 0 20px 10px #3F51B5;
 }
 h2:hover{
-    box-shadow: 0 15px 10px -10px #cb3066;
+  box-shadow: 0 10px 5px -5px #03A9F4;
 }
 
 h3 {
@@ -474,7 +466,8 @@ animation: hr-move 2s linear infinite;
   margin-bottom: 1rem;
   overflow: auto;
   width: 100%;
-  background-image: linear-gradient(to right, #428bca15, #428bca65);
+  /* background-image: linear-gradient(to right, #428bca15, #428bca65); */
+  background: transparent;
 }
 .markdown-section th {
   border: 1px solid #428bca;
@@ -482,7 +475,7 @@ animation: hr-move 2s linear infinite;
   padding: 6px 13px;
 }
 .markdown-section td {
-  border: 1px solid #42a5f5;
+  border: 1px solid cadetblue;
   padding: 6px 13px;
 }
 .markdown-section tr {
@@ -520,8 +513,7 @@ animation: hr-move 2s linear infinite;
     /* padding: 6px 13px; */
 /* } */
 .markdown-section  thead {
-    background-image: linear-gradient(to right,darkcyan,#42a5f5);
-	color: white;
+  background: cadetblue;
 }
 
 
@@ -836,7 +828,7 @@ body {
 .markdown-section figure,
 .markdown-section p {
   margin: 1.2em 0;
-  text-indent: 2em;
+  /* text-indent: 2em; */
 }
 .markdown-section p,
 .markdown-section ul,
@@ -849,10 +841,33 @@ body {
   padding-left: 1.5rem;
 }
 .markdown-section blockquote {
-  border-left: 4px solid var(--theme-color, #42b983);
-  color: #858585;
-  margin: 2em 0;
-  padding-left: 20px;
+	background: #20242f !important;
+    border-radius: 5px !important;
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, .4) !important;
+    padding-top: 30px !important;
+    position: relative !important;
+    margin: 15px 0 !important;
+    font-size: 12px !important;
+    font-family: "FiraCode Nerd Font Mono" !important;
+    padding-bottom: 8px !important;
+    line-height: inherit !important;
+    border-radius: 5px !important;
+    background-image: linear-gradient(45deg, var(--background), transparent) !important;
+    padding: 0px 20px;
+    color: #b9babb;
+    font-family: system-ui !important;
+}
+.markdown-section blockquote:before{
+  content: ' ';
+  position: absolute !important;
+  top: 10px !important;
+  left: 10px !important;
+  width: 12px !important;
+  height: 12px !important;
+  /* border-radius: 50%; */
+  background: #fc625d !important;
+  box-shadow: 20px 0 #35cd4b, 40px 0 #fdbc40 !important;
+  z-index: 1 !important;
 }
 .markdown-section blockquote p {
   font-weight: 600;
@@ -900,20 +915,40 @@ body {
   font-size: 0.8rem;
 }
 .markdown-section pre {
-  padding: 0 1.4rem;
-  line-height: 1.5rem;
-  overflow: auto;
-  word-wrap: normal;
+  background: #20242f  !important;
+  border-radius: 5px !important;
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, .4) !important;
+  padding-top: 30px !important;
+  position: relative !important; /* 新增定位上下文 */
+  margin: 15px 0  !important;    /* 保持原有外边距 */
+  font-size: 12px  !important;
+  font-family: "FiraCode Nerd Font Mono"  !important;
+  padding-bottom: 8px  !important;
+  line-height: inherit  !important;
+}
+.markdown-section pre::before{
+  content: ' ';
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #fc625d;
+  box-shadow: 20px 0 #35cd4b, 40px 0 #fdbc40;
+  z-index: 1;
 }
 .markdown-section pre > code {
-  color: #525252;
-  font-size: 0.8rem;
-  padding: 2.2em 5px;
-  line-height: inherit;
+  color: #1B5E20;
+  font-size: 0.8rem !important;
+  padding: 5px 2em;
+  line-height: 1.5 !important;
   margin: 0 2px;
   max-width: inherit;
   overflow: inherit;
   white-space: inherit;
+  background: #20242f;
+  /* font-family: "Fira Code" !important; */
 }
 .markdown-section output {
   padding: 1.7rem 1.4rem;
