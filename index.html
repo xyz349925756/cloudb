@@ -260,6 +260,12 @@
                 <button onclick="searchEngine('baidu')" class="btn btn-primary">
                   <i class="fa-solid fa-poo fa-sm"></i>&nbsp;百度
                 </button>
+                <button onclick="searchEngine('bilibili')" class="btn btn-info">
+                  <i class="fa-brands fa-bilibili fa-bounce"></i>&nbsp;哔哩哔哩
+                </button>
+                <button onclick="searchEngine('ifixit')" class="btn btn-warning">
+                  <i class="fa-solid fa-screwdriver-wrench fa-spin"></i>&nbsp;IFIXIT
+                </button>
                 <button
                   onclick="searchEngine('youtube')"
                   class="btn btn-danger">
@@ -1060,10 +1066,14 @@
           url = "https://www.google.com/search?q=" + encodeURIComponent(query);
         } else if (engine === "baidu") {
           url = "https://www.baidu.com/s?wd=" + encodeURIComponent(query);
+        } else if (engine === "bilibili") {
+          url = "https://search.bilibili.com/all?keyword=" + encodeURIComponent(query);
         } else if (engine === "bing") {
           url = "https://www.bing.com/search?q=" + encodeURIComponent(query);
         } else if (engine === "github") {
           url = "https://github.com/search?q=" + encodeURIComponent(query);
+        } else if (engine === "ifixit") {
+          url = "https://zh.ifixit.com/Search?query=" + encodeURIComponent(query);
         } else if (engine === "sougou") {
           url = "https://www.sogou.com/web?query=" + encodeURIComponent(query);
         } else if (engine === "zhihu") {
